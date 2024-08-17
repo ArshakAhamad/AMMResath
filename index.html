@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 <style>
+/* General Styles */
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -18,32 +19,29 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the top navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #333;
-  padding: 0 20px; /* Add some padding for breathing room */
+  padding: 0 20px;
 }
 
-/* Style the topnav links */
 .topnav a {
   float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 20px; /* Increased padding for better spacing */
+  padding: 14px 20px;
   text-decoration: none;
-  font-size: 17px; /* Increase font size for readability */
+  font-size: 17px;
 }
 
-/* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
 .top1nav {
-  float: left; /* Ensure the brand/logo stays on the left */
+  float: left;
 }
 
 .top1nav a {
@@ -51,22 +49,19 @@ body {
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
-  font-size: 20px; /* Increase font size for branding */
+  font-size: 20px;
 }
 
-/* Change color on hover */
 .top1nav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Style the content */
 .content {
   background-color: #ddd;
   padding: 10px;
 }
 
-/* Style the footer */
 .footer {
   background-color: #000;
   color: #fff;
@@ -74,25 +69,24 @@ body {
   text-align: center;
 }
 
-/* Gallery styling */
 .gallery-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px; /* Gap between gallery items */
+  gap: 20px;
   padding: 20px 0;
 }
 
 .gallery {
   border: 1px solid #ccc;
-  width: 23%; /* Adjust width for responsive layout */
+  width: 23%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
 
 .gallery:hover {
   border: 1px solid #777;
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05);
 }
 
 .gallery img {
@@ -113,7 +107,7 @@ body {
   max-width: 300px;
   margin: auto;
   text-align: center;
-  font-family: arial;
+  font-family: Arial, sans-serif;
 }
 
 .title {
@@ -142,73 +136,116 @@ a {
 
 button:hover, a:hover {
   opacity: 0.7;
-}	
-	
-#projects {
-    font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana, sans-serif;
-}
-b {
-    font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
 }
 
-/* Style the contact form */
+#projects {
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', 'Verdana', sans-serif;
+}
+
+b {
+  font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;
+}
+
 .contact {
-  background-color: #f9f9f9; /* Light background for contrast */
-  padding: 40px 20px; /* Add padding for spacing */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-  max-width: 600px; /* Center and limit width */
-  margin: 0 auto; /* Center the form */
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact h3 {
-  font-size: 24px; /* Larger heading for prominence */
-  margin-bottom: 20px; /* Space below the heading */
-  text-align: center; /* Center the heading */
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .contact p {
-  font-size: 16px; /* Increase font size for readability */
-  margin-bottom: 30px; /* Space below the paragraph */
-  text-align: center; /* Center the introductory text */
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .contact input[type="text"],
 .contact textarea {
-  width: 100%; /* Full width inputs */
-  padding: 10px; /* Add padding inside inputs */
-  margin-bottom: 20px; /* Space between inputs */
-  border: 1px solid #ccc; /* Light border */
-  border-radius: 5px; /* Rounded corners */
-  box-sizing: border-box; /* Ensure padding doesn’t affect width */
-  font-size: 16px; /* Increase font size */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 .contact textarea {
-  resize: vertical; /* Allow vertical resize */
-  height: 150px; /* Set initial height */
+  resize: vertical;
+  height: 150px;
 }
 
 .contact button {
-  background-color: #333; /* Dark background for button */
-  color: white; /* White text */
-  padding: 10px 20px; /* Button padding */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  font-size: 16px; /* Increase font size */
-  width: 100%; /* Full width button */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-  transition: background-color 0.3s ease; /* Smooth hover transition */
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
 .contact button:hover {
-  background-color: #555; /* Lighter background on hover */
+  background-color: #555;
 }
 
 .contact button:active {
-  background-color: #000; /* Even darker background on click */
-}	
+  background-color: #000;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .topnav a, .top1nav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery {
+    width: 80%; /* Take up more space on smaller screens */
+    margin-bottom: 20px; /* Add space between gallery items */
+  }
+
+  .content img {
+    width: 100%; /* Ensure images are responsive */
+  }
+
+  .card {
+    max-width: 100%; /* Ensure the card takes up full width on small screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topnav a, .top1nav a {
+    padding: 12px 10px; /* Reduce padding on smaller screens */
+    font-size: 15px; /* Reduce font size on smaller screens */
+  }
+
+  .gallery {
+    width: 100%; /* Full width gallery on small screens */
+  }
+
+  .contact {
+    padding: 20px 10px; /* Reduce padding on small screens */
+  }
+}
+
 </style>
 </head>
 <body>
